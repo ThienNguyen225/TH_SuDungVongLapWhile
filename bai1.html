@@ -6,11 +6,13 @@
 </head>
 <body>
     <script>
-        var num = parseInt(prompt("nhập giá trị"));
+        var num;
         var total = 0;
         while ( num != -1) {
             num = parseInt(prompt("nhập giá trị"));
-            alert(num);
+            if ( num === -1){
+            break;
+            }    
             total = total + num;
         }
         alert(total);
